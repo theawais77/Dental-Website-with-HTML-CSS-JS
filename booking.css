@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(130, 119, 119, 0.507),rgba(138, 138, 147, 0.438)), url(images/pills-beside-clipboard.jpg);
+    
+    background: color #f4f4f4;;
+}
+
+.container {
+    text-align: center;
+    }
+   
+
+
+.appointment-form {
+    width: 500px;
+    padding: 50px;
+    padding-top: 20px;
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(3, 3, 3, 0.979);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}

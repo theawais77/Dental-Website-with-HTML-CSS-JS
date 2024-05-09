@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToothWiz</title>
+    <link rel="icon" type="image/x-icon" href="images/clinic.png">
+    <link rel="stylesheet" href="Main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header">
+        <nav class="nav-container">
+            <img src="images/logo (2).png" alt="">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href=""><b>HOME</b></a></li>
+                    <li><a href="treatment.html"><b>TREATMENT</b></a></li>
+                    <li><a href="about.html"><b>ABOUT</b></a></li>
+                    <li><a href="contact.html"><b>CONTACT US</b></a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Elevating your Oral Health with<br><span id="element"></span></h1>
+            <a href="booking.html" class="hero-btn">BOOK AN APPOINTMENT</a>
+            <a href="signIn.html" class="hero-btn"><b>Login/Register</b></a>
+        </div>
+    </section>
+    <!-----TREATMENT-->
+    <section class="treatment" id="treatment">
+        <h1>Treaments We do</h1>
+        <p>At Tooth Wiz we offer a wide range of treatments to help you achieve your smile.<br>
+            These are the treatments provided by us</p>
+
+        <div class="row">
+
+            <div class="treat-1">
+                <h3>Root Canal</h3>
+                <p>A root canal is performed when the endodontist removes the infected pulp and nerve in the root of the
+                    tooth, cleans and shapes the inside of the root canal, then fills and seals the space.</p>
+            </div>
+            <div class="treat-1">
+                <h3>Teeth whitening</h3>
+                <p>Teeth whitening is a procedure to lighten the color of your teeth and remove stains. You can have it
+                    done at a dentist's office, or do it yourself at home.</p>
+            </div>
+            <div class="treat-1">
+                <h3>Teeth Extraction</h3>
+                <p>A tooth extraction is a dental procedure during which your tooth is completely removed from its
+                    socket. Sometimes, people refer to this as “pulling" a tooth.</p>
+            </div>
+        </div>
+    </section>
+    <!---Facilities---->
+    <section class="facilities" id="facilities">
+        <h1>Our Facilities</h1>
+        <p>“Welcome to our facility!”: This is a simple and friendly greeting that can make visitors feel welcome and
+            comfortable</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/clean.jpg" alt="">
+                <h3>Hygienic Environment</h3>
+                <p>Why is hygiene important in a dental clinic?
+                    In a dental practice, cleaning and disinfecting the surrounds, work area and equipment is
+                    fundamental for guaranteeing the safety of both healthcare professionals and patients.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/instruments.jpg" alt="">
+                <h3>Sterilized Instruments</h3>
+                <p>Sterilization kills or renders inactive all microbial organisms. The common methods used are steam
+                    heat, ethylene oxide gas or chemicals. Any item used for survival surgery or fluids used for
+                    flushing or injection must be sterilized.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/doctor.jpg" alt="">
+                <h3>Professional Doctors and staff</h3>
+                <p>Our team have qualified Doctors. They are present at your service to give you best dental advice and
+                    treatment..</p>
+            </div>
+        </div>
+    </section>
+    <!-----------Feedback--------->
+    <section class="feedback">
+        <h1>What our patient says</h1>
+        <div class="row">
+            <div class="feedback-col">
+                <img src="images/Saly-11.png" alt="">
+                <div>
+                    <p>"Smiling wide again thanks to this amazing dental practice! Not only was the dentist gentle and
+                        patient, but the entire staff made me feel incredibly comfortable.
+
+                    </p>
+                    <h3>Daisy Henry</h3>
+                </div>
+            </div>
+
+            <div class="feedback-col">
+                <img src="images/Saly-22.png" alt="">
+                <div>
+                    <p>The dentist was meticulous in their examination, taking the time to explain everything clearly
+                        and address all my questions. And the best part? The entire procedure was surprisingly
+                        pain-free! This is definitely my new dental home.</p>
+                    <h3>Sarrah Jack</h3>
+                </div>
+            </div>
+
+            <div class="feedback-col">
+                <img src="images/01.png" alt="">
+                <div>
+                    <p>I left with a sparkling smile and a newfound confidence in my oral health. If you're looking for
+                        fantastic dental care that goes above and beyond, look no further!"</p>
+                    <h3>Jennifer Oliver</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----Footer-->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Discover our commitment to exceptional dental care. From expert professionals to cutting-edge treatments, we
+            prioritize your smile. <br>Schedule an appointment today and embark on a journey to lasting oral health</p>
+        <div class="icon">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.github.com/"> <i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        </div>
+     
+    </section>
+    <!--JavaScript-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['', 'Qualified Doctors', 'Experienced Staff', 'Exceptional Care For All ', 'Best Dental Treatment'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToothWiz</title>
+    <link rel="icon" type="image/x-icon" href="images/clinic.png">
+    <link rel="stylesheet" href="Main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <section class="sub-header">
+        <nav>
+
+            <img src="images/logo (2).png" alt="">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="main.html"><b>HOME</b></a></li>
+                    <li><a href=""><b>TREATMENT</b></a></li>
+                    <li><a href="about.html"><b>ABOUT</b></a></li>
+                    <li><a href="contact.html"><b>CONTACT US</b></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Treatments we do</h1>
+    </section>
+
+    <section class="treatment">
+        <h1>Treaments We do</h1>
+        <p>At Tooth Wiz we offer a wide range of treatments to help you achieve your smile.<br>
+            These are the treatments provided by us</p>
+
+        <div class="row">
+
+            <div class="treat-1">
+                <h3>Root Canal</h3>
+                <p>A root canal is performed when the endodontist removes the infected pulp and nerve in the root of the
+                    tooth, cleans and shapes the inside of the root canal, then fills and seals the space.</p>
+            </div>
+            <div class="treat-1">
+                <h3>Teeth whitening</h3>
+                <p>Teeth whitening is a procedure to lighten the color of your teeth and remove stains. You can have it
+                    done at a dentist's office, or do it yourself at home.</p>
+            </div>
+            <div class="treat-1">
+                <h3>Teeth Extraction</h3>
+                <p>A tooth extraction is a dental procedure during which your tooth is completely removed from its
+                    socket. Sometimes, people refer to this as “pulling" a tooth.</p>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="treat-2">
+                <h3>Dentures</h3>
+                <p>Dentures are removable appliances used to replace missing teeth. They improve chewing ability and enhance facial appearance for individuals with significant tooth loss.</p>
+            </div>
+            <div class="treat-2">
+                <h3>Mouthguards</h3>
+                <p>Customized mouthguards protect teeth from grinding (bruxism) and prevent injuries during sports activities. They are designed for comfort and optimal protection..</p>
+            </div>
+            <div class="treat-2">
+                <h3>Dental Crowns</h3>
+                <p>Dental crowns are tooth-shaped caps that cover damaged or decayed teeth. They restore the tooth's shape, size, and strength, improving both function and aesthetics. .</p>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="treat-3">
+                <h3>Dental Sealants</h3>
+                <p>Dental sealants are thin, protective coatings applied to the chewing surfaces of molars and premolars. They help prevent cavities by sealing out bacteria and food particles from the grooves of the teeth..</p>
+            </div>
+            <div class="treat-3">
+                <h3>Emergency Dental Care</h3>
+                <p>Emergency dental care services address urgent dental issues, such as severe tooth pain, broken teeth, or dental trauma.</p>
+            </div>
+            <div class="treat-3">
+                <h3>Dental Bonding:</h3>
+                <p>Dental bonding involves the application of a tooth-colored resin to repair chipped, cracked, or discolored teeth.</p>
+            </div>
+        </div>
+        
+    </section>
+    
+    
+
+    <!-----Footer-->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Discover our commitment to exceptional dental care. From expert professionals to cutting-edge treatments, we
+            prioritize your smile. <br>Schedule an appointment today and embark on a journey to lasting oral health</p>
+        <div class="icon">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.github.com/"> <i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        </div>
+     
+    </section>
+    <!--JavaScript-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+
+</html>

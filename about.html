@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToothWiz</title>
+    <link rel="icon" type="image/x-icon" href="images/clinic.png">
+    <link rel="stylesheet" href="Main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <section class="sub-header">
+        <nav>
+
+            <img src="images/logo (2).png" alt="">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="main.html"><b>HOME</b></a></li>
+                    <li><a href="treatment.html"><b>TREATMENT</b></a></li>
+                    <li><a href="#aboutus"><b>ABOUT</b></a></li>
+                    <li><a href="contact.html"><b>CONTACT US</b></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Meet Our Dedicated Team of Dental Professionals</h1>
+                <p>Our mission is to enhance the lives of our patients by promoting optimal oral health through comprehensive and preventive dental care. We believe in fostering long-lasting relationships built on trust, transparency, and a genuine concern for your dental needs.</p>
+                <a href="" class="hero-btn"><b>Explore Now</b></a>
+            </div>
+            <div class="about-col">
+                <img src="images/doctor_chat.jpg" alt="Doctor Chatting">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-----Footer-->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Discover our commitment to exceptional dental care. From expert professionals to cutting-edge treatments, we
+            prioritize your smile. <br>Schedule an appointment today and embark on a journey to lasting oral health</p>
+        <div class="icon">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.github.com/"> <i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        </div>
+     
+    </section>
+    <!--JavaScript-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['', 'Qualified Doctors', 'Experienced Staff', 'Exceptional Care For All ', 'Best Dental Treatment'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="signUp.css">
+  <title>Dental Website Signup</title>
+</head>
+<body>
+  <div class="container">
+    <form id="toothwiz_signup" method="post" >
+      <h2>Sign Up for an Account</h2>
+      <div class="input-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="Name" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="input-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <span id="password-error" style="color: red;"></span>
+      </div>
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+    <script src="signUp.js"></script>
+</body>
+</html>
